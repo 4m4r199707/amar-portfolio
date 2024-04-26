@@ -81,11 +81,11 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I'm a Technology enthusiastic irrespective of domains constantly
+            {`I'm a Technology enthusiastic irrespective of domains constantly
             exploring and understanding various technologies and principle
             behind those technologies. In the course of acquiring knowledge and
             understanding the latest technologies, I have developed robust
-            concepts of computers and increasing my knowledge.
+            concepts of computers and increasing my knowledge.`}
           </p>
           <div className="flex flex-row mt-8">
             <TabButton
