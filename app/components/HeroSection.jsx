@@ -2,7 +2,8 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
-import heroImage from "../../public/images/my-profile-1.jpg"
+import heroImage from "../../public/images/my-profile-1.jpg";
+
 export default function HeroSection() {
   return (
     <section>
