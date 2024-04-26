@@ -3,7 +3,7 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 
 import TabButton from "./TabButton";
-import AboutImage from "../../public/images//about.jpeg";
+import AboutImage from "../../public/images/about.jpeg";
 
 const TAB_DATA = [
   {
