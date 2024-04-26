@@ -2,7 +2,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import Image from "next/image";
-
+import heroImage from "../../public/images/my-profile-1.jpg"
 export default function HeroSection() {
   return (
     <section>
@@ -51,7 +51,7 @@ export default function HeroSection() {
                 className="rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
                 width={300}
                 height={300}
-                src="/images/my-profile-1.jpg"
+                src={heroImage}
               />
             </div>
           </div>
