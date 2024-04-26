@@ -4,25 +4,68 @@ import Image from "next/image";
 
 import TabButton from "./TabButton";
 import AboutImage from "../../public/images/About.jpeg";
+import JavaScript from "../../public/images/js.png";
+import ReactJS from "../../public/images/reactjs.png";
+import Azure from "../../public/images/azure.png";
+import CSS from "../../public/images/css.png";
+import HTML from "../../public/images/html.png";
+import MySql from "../../public/images/mysql.png";
+import NextJs from "../../public/images/nextjs.png";
+import NodeJs from "../../public/images/nodejs.png";
+import ExpressJs from "../../public/images/express.png";
+
+const skillImageMapping = [
+  {
+    title: "React Js",
+    image: ReactJS,
+  },
+  {
+    title: "Express",
+    image: ExpressJs,
+  },
+  {
+    title: "Node Js",
+    image: NodeJs,
+  },
+  {
+    title: "Azure",
+    image: Azure,
+  },
+  {
+    title: "JavaScript",
+    image: JavaScript,
+  },
+  {
+    title: "My Sql",
+    image: MySql,
+  },
+  {
+    title: "Next Js",
+    image: NextJs,
+  },
+  {
+    title: "HTML 5",
+    image: HTML,
+  },
+  {
+    title: "CSS",
+    image: CSS,
+  },
+];
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul>
-        {[
-          "React Js",
-          "Node Js",
-          "Express",
-          "Azure",
-          "Next Js",
-          "MySQL",
-          "JavaScript",
-        ].map((skill, index) => (
-          <li key={skill + index}>{skill}</li>
+      <div className="flex flex-wrap">
+        {skillImageMapping?.map((skill, index) => (
+          <div key={skill+index} className="p-3">
+            {/* <Image alt={skill} src={skill.image} width={50} height={50} /> */}
+            <div>{skill.title}</div>
+          </div>
         ))}
-      </ul>
+      </div>
     ),
   },
   //   {
