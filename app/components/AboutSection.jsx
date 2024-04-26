@@ -20,34 +20,32 @@ const TAB_DATA = [
           "MySQL",
           "JavaScript",
         ].map((skill, index) => (
-          <li key={skill+index}>{skill}</li>
+          <li key={skill + index}>{skill}</li>
         ))}
       </ul>
     ),
   },
-//   {
-//     title: "Experience",
-//     id: "experience",
-//     content: (
-//       <ul>
-//         {[
-//           "Tredence Analytics",
-//           "Infosys LTD"
-//         ].map((exp, index) => (
-//           <li key={exp+index}>{exp}</li>
-//         ))}
-//       </ul>
-//     ),
-//   },
+  //   {
+  //     title: "Experience",
+  //     id: "experience",
+  //     content: (
+  //       <ul>
+  //         {[
+  //           "Tredence Analytics",
+  //           "Infosys LTD"
+  //         ].map((exp, index) => (
+  //           <li key={exp+index}>{exp}</li>
+  //         ))}
+  //       </ul>
+  //     ),
+  //   },
   {
     title: "Education",
     id: "education",
     content: (
       <ul>
-        {[
-          "INFORMATION SCIENCE AND ENGINEERING",
-        ].map((edu, index) => (
-          <li key={edu+index}>{edu}</li>
+        {["INFORMATION SCIENCE AND ENGINEERING"].map((edu, index) => (
+          <li key={edu + index}>{edu}</li>
         ))}
       </ul>
     ),
@@ -58,7 +56,7 @@ const TAB_DATA = [
     content: (
       <ul>
         {[].map((cert, index) => (
-          <li key={cert+index}>{cert}</li>
+          <li key={cert + index}>{cert}</li>
         ))}
       </ul>
     ),
@@ -82,11 +80,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            {`I'm a Technology enthusiastic irrespective of domains constantly
-            exploring and understanding various technologies and principle
-            behind those technologies. In the course of acquiring knowledge and
-            understanding the latest technologies, I have developed robust
-            concepts of computers and increasing my knowledge.`}
+            {`As a technology enthusiast, I have mastered full-stack development with a specialization in React, Node.js, and Azure. My journey is fueled by a relentless quest for understanding, leading to a deep knowledge of computers and a passion for innovation. With my expertise in React and Node.js, I can create dynamic, user-friendly interfaces and robust backend systems. Additionally, my knowledge of Azure enables me to deploy scalable cloud solutions. My commitment to continuous learning positions me as a forward-thinking full-stack developer, always ready to tackle complex challenges and drive innovation.`}
           </p>
           <div className="flex flex-row mt-8">
             <TabButton
@@ -115,7 +109,7 @@ const AboutSection = () => {
             </TabButton>
           </div>
           <div className="mt-8">
-            {TAB_DATA.find((t)=>t.id===tab)?.content}
+            {TAB_DATA.find((t) => t.id === tab)?.content}
           </div>
         </div>
       </div>
