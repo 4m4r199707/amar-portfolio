@@ -2,9 +2,11 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 import NavLink from "./NavLink";
 import MenuOverlay from "./MenuOverlay";
+import logo from "../../public/images/logo.png";
 
 const navLinks = [
   {
@@ -31,7 +33,13 @@ const Navbar = () => {
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          {/* <Image
+            alt="hero-image"
+            width={50}
+            height={50}
+            src={logo}
+          /> */}
+          AK
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
